@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - KONNI GROUP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+
+<div class="header">
+    <img src="logo.jpg" alt="Logo">
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#ally" class="nav-link">Ally</a></li>
+            <li><a href="#list-death" class="nav-link">List Death</a></li>
+            <li><a href="#kia" class="nav-link">KIA</a></li>
+        </ul>
+    </nav>
+
+    <!-- Welcome Text -->
+    <div class="welcome-section">
+        <p></p>
+    </div>
+</div>
+
+<!-- Audio Player -->
+<audio id="audioElement" autoplay muted loop>
+    <source src="background-music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Audio Control Button -->
+<button id="audioBtn" class="audio-btn-small">🔊</button>
+
+<!-- Main Content -->
+<div class="main-content">
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-inner">
+            <img src="konniAbout.png" alt="KONNI GROUP" class="about-img">
+            <div class="about-content">
+                <h2>About KONNI GROUP</h2>
+
+                <p>KONNI GROUP — INTERNAL STRUCTURE DOSSIER</p>
+
+                <p>Classification Level: BLACK PRIORITY<br>Distribution: Restricted Command Access Only<br>Authorization Required: Tier-1 Clearance</p>
+
+                <p>Konni Group beroperasi di bawah sistem komando terpusat yang dikendalikan langsung oleh Commander Vladimir Makarov. Seluruh arah strategis organisasi, prioritas operasional, serta penetapan target ditentukan melalui otoritas tunggal di bawah komando pusat. Makarov dikenal dengan pendekatan berbasis dominasi strategis jangka panjang, mengutamakan destabilisasi terkontrol serta manipulasi medan konflik untuk menghasilkan keuntungan struktural permanen.</p>
+
+                <p>Di bawah komando utama, jabatan Deputy Commander dipegang oleh Colonel Anatoly Chernov, yang bertanggung jawab atas sinkronisasi lintas divisi serta implementasi langsung kebijakan strategis. Chernov mengawasi koordinasi antara unit lapangan dan pusat komando, memastikan setiap operasi berjalan sesuai parameter risiko yang telah ditetapkan. Dalam ketiadaan komandan utama, seluruh otoritas operasional dialihkan kepadanya.</p>
+
+                <p>Strategic Operations Directorate dipimpin oleh Major Sergei Volkov, yang mengatur perencanaan taktis dan distribusi unit modular dalam berbagai zona operasional. Volkov bertanggung jawab atas penyusunan rencana penetrasi, eksfiltrasi, serta adaptasi cepat terhadap perubahan situasi medan. Semua operasi berskala tinggi memerlukan validasi dari direktorat ini sebelum aktivasi.</p>
+
+                <p>Intelligence & Surveillance Command berada di bawah pengawasan Director Irina Sokolova, spesialis pengumpulan intelijen dan analisis prediktif. Divisi ini mengendalikan jaringan pemantauan, pengawasan digital, serta infiltrasi informasi. Sokolova memiliki otoritas penuh atas validasi ancaman dan klasifikasi target. Tanpa konfirmasi intelijen dari divisinya, tidak ada operasi yang disetujui untuk dilaksanakan.</p>
+
+                <p>Tactical Operations Division dipimpin oleh Captain Viktor Reznov, yang mengomandoi unit eksekusi lapangan. Reznov bertanggung jawab atas kesiapan tempur, pelatihan disipliner, dan implementasi protokol keterlibatan. Unit di bawahnya terdiri dari tim modular dengan spesialisasi urban assault, counter-surveillance, dan rapid strike response.</p>
+
+                <p>Logistics & Infrastructure Command berada di bawah Chief Logistics Officer Dmitri Antonov, yang mengelola mobilitas, distribusi persenjataan, pengamanan suplai, serta kestabilan infrastruktur operasional. Seluruh rantai suplai dilindungi oleh sistem redundansi ganda untuk memastikan tidak ada gangguan terhadap keberlanjutan operasi.</p>
+
+                <p>Operational Doctrine Summary:</p>
+
+                <p>Kendali informasi mendahului intervensi fisik.</p>
+
+                <p>Dominasi strategis lebih diutamakan daripada kemenangan simbolis.</p>
+
+                <p>Loyalitas terhadap struktur komando bersifat absolut.</p>
+
+                <p>Kegagalan operasional tidak termasuk dalam parameter yang diterima.</p>
+
+                <p>Konni Group tidak menempatkan dirinya sebagai reaksi terhadap konflik global. Organisasi ini membentuk ulang struktur konflik tersebut sesuai kepentingannya. Setiap unit adalah bagian dari sistem yang lebih besar. Setiap sistem memiliki tujuan akhir yang telah ditetapkan.</p>
+
+                <p>Konni Group does not escalate chaos.<br>Konni Group engineers the outcome.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ally Section -->
+    <section id="ally" class="ally-section">
+        <h2>Ally</h2>
+        <p>Informasi mengenai mitra strategis dan aliansi KONNI GROUP.</p>
+        <div class="ally-inner">
+            <h3 class="commander-title">Commander</h3>
+            <img src="Makarov.webp" alt="Makarov - KONNI GROUP Leader" class="ally-img" id="makarovImg" style="cursor: pointer;">
+        </div>
+    </section>
+
+    <!-- Makarov Modal -->
+    <div id="makarovModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="Makarov.webp" alt="Makarov - KONNI GROUP Leader" class="modal-img">
+            <div class="modal-text">
+                <h3>Commander Vladimir Makarov</h3>
+                <p>Konni Group beroperasi di bawah sistem komando terpusat yang dikendalikan langsung oleh Commander Vladimir Makarov. Makarov dikenal dengan pendekatan berbasis dominasi strategis jangka panjang, mengutamakan destabilisasi terkontrol serta manipulasi medan konflik untuk menghasilkan keuntungan struktural permanen.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Commander Team Section -->
+    <section id="commander-team" class="team-section">
+        <h2>Commander Team</h2>
+        <div class="team-inner">
+            <img src="konniTeam.png" alt="KONNI GROUP Commander Team" class="team-img" id="teamImg" style="cursor: pointer;">
+        </div>
+    </section>
+
+    <!-- Commander Team Modal -->
+    <div id="teamModal" class="modal">
+        <div class="modal-content">
+            <span class="close-team-modal">&times;</span>
+            <img src="konniTeam.png" alt="KONNI GROUP Commander Team" class="modal-img">
+            <div class="modal-text">
+                <h3>Commander Team</h3>
+                <p>KONNI GROUP memiliki tim komandan yang terdiri dari para ahli strategis dan operasional. Di bawah kepemimpinan Commander Vladimir Makarov, tim ini mengelola berbagai divisi operasional termasuk Strategic Operations Directorate, Intelligence & Surveillance Command, Tactical Operations Division, dan Logistics & Infrastructure Command. Setiap anggota tim membawa keahlian unik dan bertanggung jawab atas aspek spesifik dari organisasi.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- List Death Section -->
+    <section id="list-death" class="death-section">
+        <h2>List Death</h2>
+        <div class="death-inner">
+            <img src="listSearch.png" alt="List Death - Target Database" class="death-img" id="deathImg" style="cursor: pointer;">
+        </div>
+    </section>
+
+    <!-- List Death Modal -->
+    <div id="deathModal" class="modal">
+        <div class="modal-content modal-death">
+            <span class="close-death-modal">&times;</span>
+            <div class="modal-text death-text">
+                <h3>List Death - Target Database</h3>
+
+                <div class="target-entry">
+                    <h4>▌ RUSDI GANJA 808</h4>
+                    <p><strong>Codename:</strong> RUSDI GANJA 808</p>
+                    <p><strong>Status:</strong> Active Target</p>
+                    <p><strong>Threat Level:</strong> HIGH</p>
+                    <p><strong>Operational Priority:</strong> Immediate Surveillance</p>
+                    <p>Rusdi Ganja 808 teridentifikasi sebagai operator independen dengan pola pergerakan tidak terdeteksi dan metode komunikasi terenkripsi. Aktivitasnya menunjukkan keterlibatan dalam distribusi logistik gelap serta pengendalian jaringan bawah tanah yang sulit dilacak. Ia dikenal jarang muncul di garis depan, namun setiap konflik yang disentuhnya menunjukkan eskalasi signifikan dalam waktu singkat.</p>
+                    <p>Intelijen Konni mengklasifikasikan subjek ini sebagai ancaman tingkat tinggi karena kemampuannya memobilisasi sumber daya tanpa meninggalkan jejak digital yang jelas. Analisis perilaku menunjukkan kecenderungan manipulatif dan strategi bertahan berbasis tekanan psikologis terhadap targetnya.</p>
+                    <p><em>Catatan Komando: Subjek tidak bertindak tanpa rencana. Pantau sebelum intervensi. Eliminasi hanya dengan otorisasi Tier-1.</em></p>
+                </div>
+
+                <div class="target-entry">
+                    <h4>▌ DON HONDISRA</h4>
+                    <p><strong>Codename:</strong> DON HONDISRA</p>
+                    <p><strong>Status:</strong> Active Target</p>
+                    <p><strong>Threat Level:</strong> MODERATE–HIGH</p>
+                    <p><strong>Operational Priority:</strong> Capture & Interrogate</p>
+                    <p>Don Hondisra muncul dalam beberapa insiden destabilisasi wilayah operasional Konni. Meskipun tidak memiliki struktur komando formal, ia menunjukkan kemampuan mempengaruhi kelompok kecil untuk melakukan tindakan terkoordinasi. Taktiknya bersifat langsung, berisiko, dan sering memanfaatkan elemen kejutan.</p>
+                    <p>Evaluasi intelijen menyatakan bahwa Hondisra bukan sekadar eksekutor, melainkan simpul penghubung dalam jaringan yang lebih besar. Potensi informasi yang dimilikinya dinilai bernilai strategis tinggi.</p>
+                    <p><em>Catatan Komando: Subjek lebih berbahaya dalam tekanan. Amankan sebelum jaringan terfragmentasi.</em></p>
+                </div>
+
+                <div class="target-entry">
+                    <h4>▌ LENDIRO</h4>
+                    <p><strong>Codename:</strong> LENDIRO</p>
+                    <p><strong>Status:</strong> Active Target</p>
+                    <p><strong>Threat Level:</strong> CRITICAL</p>
+                    <p><strong>Operational Priority:</strong> High-Risk Engagement</p>
+                    <p>Lendiro terdeteksi sebagai aktor utama dalam beberapa operasi bayangan yang secara langsung mengganggu stabilitas strategis Konni. Metode operasinya presisi, minim saksi, dan selalu meninggalkan dampak sistemik. Tidak ada pola tetap dalam pendekatannya, membuat prediksi gerakan menjadi kompleks.</p>
+                    <p>Profil psikologis menunjukkan disiplin ekstrem dan toleransi risiko tinggi. Lendiro tidak bergerak untuk eksposur — ia bergerak untuk hasil. Kemungkinan besar memiliki pelatihan formal dalam taktik urban dan infiltrasi diam-diam.</p>
+                    <p><em>Catatan Komando: Intervensi langsung memerlukan unit taktis tingkat lanjut. Jangan lakukan pendekatan tanpa dukungan penuh.</em></p>
+                </div>
+
+                <div class="target-entry">
+                    <h4>▌ MELERO</h4>
+                    <p><strong>Codename:</strong> MELERO</p>
+                    <p><strong>Status:</strong> Active Target</p>
+                    <p><strong>Threat Level:</strong> VARIABLE</p>
+                    <p><strong>Operational Priority:</strong> Ongoing Monitoring</p>
+                    <p>Melero dikategorikan sebagai operator oportunis dengan kecenderungan adaptif tinggi. Ia sering muncul dalam situasi pasca-konflik, memanfaatkan kekosongan struktur untuk memperluas pengaruhnya. Walaupun tidak selalu menjadi inisiator, kehadirannya sering memperpanjang durasi ketidakstabilan.</p>
+                    <p>Intel menunjukkan bahwa Melero memiliki jaringan kontak luas dan kemampuan membangun aliansi sementara untuk keuntungan strategis. Ancaman tidak selalu terlihat secara langsung, namun efek jangka panjangnya dapat mengganggu keseimbangan operasional.</p>
+                    <p><em>Catatan Komando: Subjek sulit diprediksi. Pantau komunikasi dan jalur pergerakan secara berkelanjutan.</em></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- KIA Section -->
+    <section id="kia" class="kia-section">
+        <h2>KIA</h2>
+        <div class="kia-inner">
+            <div class="kia-card">
+                <img src="kia1.png" alt="KIA Report - Subject 01" class="kia-img" id="kia1Img" style="cursor: pointer;">
+            </div>
+            <div class="kia-card">
+                <img src="kia2.png" alt="KIA Report - Subject 02" class="kia-img" id="kia2Img" style="cursor: pointer;">
+            </div>
+        </div>
+    </section>
+
+    <!-- KIA 1 Modal -->
+    <div id="kia1Modal" class="modal">
+        <div class="modal-content modal-kia">
+            <span class="close-kia1-modal">&times;</span>
+            <div class="modal-text kia-text">
+                <h3>▌ KIA REPORT — SUBJECT 01</h3>
+
+                <p><strong>Status:</strong> Killed In Action</p>
+                <p><strong>Location:</strong> Classified Urban Zone</p>
+                <p><strong>Operation Code:</strong> BLACK FALCON</p>
+                <p><strong>Confirmation:</strong> Confirmed</p>
+
+                <p>Subjek gugur dalam operasi pengamanan strategis setelah eskalasi situasi yang tidak terprediksi. Kontak terjadi dalam jarak dekat dengan waktu reaksi terbatas. Upaya stabilisasi dilakukan, namun cedera yang dialami dinyatakan fatal.</p>
+
+                <p>Laporan unit menyatakan bahwa subjek tetap menjalankan instruksi komando hingga komunikasi terputus. Tidak ditemukan penyimpangan prosedur. Semua tindakan sesuai dengan protokol keterlibatan.</p>
+
+                <p><strong>Final Assessment:</strong></p>
+                <p>Dedikasi terhadap misi dinilai tinggi. Gugur dalam kondisi menjalankan tugas aktif.</p>
+
+                <p><em>"Mission carried. Duty fulfilled."</em></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- KIA 2 Modal -->
+    <div id="kia2Modal" class="modal">
+        <div class="modal-content modal-kia">
+            <span class="close-kia2-modal">&times;</span>
+            <div class="modal-text kia-text">
+                <h3>▌ KIA REPORT — SUBJECT 02</h3>
+
+                <p><strong>Status:</strong> Killed In Action</p>
+                <p><strong>Location:</strong> Papua Sector – Dense Forest Zone</p>
+                <p><strong>Operation Code:</strong> ███████</p>
+                <p><strong>Confirmation:</strong> Verified</p>
+
+                <p>Subjek dinyatakan gugur dalam operasi lapangan di wilayah hutan Papua setelah terlibat dalam kontak bersenjata berdurasi singkat namun intens. Kondisi medan yang ekstrem, visibilitas terbatas, serta tekanan taktis dari berbagai arah mempersempit ruang manuver unit.</p>
+
+                <p>Berdasarkan laporan akhir, subjek tetap mempertahankan posisi hingga evakuasi tidak lagi memungkinkan. Tidak ada indikasi penarikan mundur. Keputusan yang diambil menunjukkan loyalitas terhadap misi hingga detik terakhir.</p>
+
+                <p><strong>Final Assessment:</strong></p>
+                <p>Subjek menunjukkan disiplin operasional dan ketahanan mental di bawah tekanan ekstrem. Status ditutup dengan kehormatan penuh.</p>
+
+                <p><em>"He did not abandon the line."</em></p>
+            </div>
+        </div>
+    </div>
+
+<script>
+// Audio Control
+const audioBtn = document.getElementById('audioBtn');
+const audioElement = document.getElementById('audioElement');
+
+// Function to play audio
+function playAudio() {
+    audioElement.muted = false;
+    const playPromise = audioElement.play();
+    
+    if (playPromise !== undefined) {
+        playPromise.then(function() {
+            audioBtn.textContent = '🔇';
+            audioBtn.classList.add('playing');
+        }).catch(function(error) {
+            console.log('Play error:', error);
+        });
+    }
+}
+
+audioBtn.addEventListener('click', function() {
+    if (audioElement.paused) {
+        playAudio();
+    } else {
+        audioElement.pause();
+        audioBtn.textContent = '🔊';
+        audioBtn.classList.remove('playing');
+    }
+});
+
+// Makarov Modal Handler
+const makarovImg = document.getElementById('makarovImg');
+const makarovModal = document.getElementById('makarovModal');
+const closeModal = document.querySelector('.close-modal');
+
+makarovImg.addEventListener('click', function() {
+    makarovModal.style.display = 'flex';
+});
+
+closeModal.addEventListener('click', function() {
+    makarovModal.style.display = 'none';
+});
+
+// Team Modal Handler
+const teamImg = document.getElementById('teamImg');
+const teamModal = document.getElementById('teamModal');
+const closeTeamModal = document.querySelector('.close-team-modal');
+
+teamImg.addEventListener('click', function() {
+    teamModal.style.display = 'flex';
+});
+
+closeTeamModal.addEventListener('click', function() {
+    teamModal.style.display = 'none';
+});
+
+// List Death Modal Handler
+const deathImg = document.getElementById('deathImg');
+const deathModal = document.getElementById('deathModal');
+const closeDeathModal = document.querySelector('.close-death-modal');
+
+deathImg.addEventListener('click', function() {
+    deathModal.style.display = 'flex';
+});
+
+closeDeathModal.addEventListener('click', function() {
+    deathModal.style.display = 'none';
+});
+
+// KIA 1 Modal Handler
+const kia1Img = document.getElementById('kia1Img');
+const kia1Modal = document.getElementById('kia1Modal');
+const closeKia1Modal = document.querySelector('.close-kia1-modal');
+
+kia1Img.addEventListener('click', function() {
+    kia1Modal.style.display = 'flex';
+});
+
+closeKia1Modal.addEventListener('click', function() {
+    kia1Modal.style.display = 'none';
+});
+
+// KIA 2 Modal Handler
+const kia2Img = document.getElementById('kia2Img');
+const kia2Modal = document.getElementById('kia2Modal');
+const closeKia2Modal = document.querySelector('.close-kia2-modal');
+
+kia2Img.addEventListener('click', function() {
+    kia2Modal.style.display = 'flex';
+});
+
+closeKia2Modal.addEventListener('click', function() {
+    kia2Modal.style.display = 'none';
+});
+
+// Close modal when clicking outside
+window.addEventListener('click', function(event) {
+    if (event.target === makarovModal) {
+        makarovModal.style.display = 'none';
+    }
+    if (event.target === teamModal) {
+        teamModal.style.display = 'none';
+    }
+    if (event.target === deathModal) {
+        deathModal.style.display = 'none';
+    }
+    if (event.target === kia1Modal) {
+        kia1Modal.style.display = 'none';
+    }
+    if (event.target === kia2Modal) {
+        kia2Modal.style.display = 'none';
+    }
+});
+
+// Auto play when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+        playAudio();
+    }, 500);
+});
+
+// Also try on user interaction as fallback
+document.addEventListener('click', function() {
+    if (audioElement.paused) {
+        playAudio();
+    }
+}, {once: true});
+</script>
+
+</body>
+</html>
